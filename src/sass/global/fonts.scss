@@ -1,23 +1,31 @@
 @font-face {
-  font-family: "Oswald";
-
+  font-family: 'Montserrat';
+  src: url('../../../build/fonts/Montserrat-Italic.woff2') format('woff2'),
+      url('../../../build/fonts/Montserrat-Italic.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-
-  src:
-    url("../../../build/fonts/oswaldregular.woff2") format("woff2"),
-    url("../../../build/fonts/oswaldregular.woff") format("woff");
+  font-style: italic;
 }
 
 @font-face {
-  font-family: "Oswald-Medium";
+  font-family: 'Montserrat';
+  src: url('../../../build/fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('../../../build/fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../build/fonts/Montserrat-Bold.woff2') format('woff2'),
+      url('../../../build/fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../../../build/fonts/Montserrat-Medium.woff2') format('woff2'),
+      url('../../../build/fonts/Montserrat-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
-
-  src:
-    url("../../../build/fonts/oswaldmedium.woff2") format("woff2"),
-    url("../../../build/fonts/oswaldmedium.woff") format("woff");
 }

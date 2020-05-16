@@ -1,5 +1,5 @@
 // Basic page options
-@import "global/scaffolding";
+@import "global/normalize";
 
 // fonts
 @import "global/fonts";
@@ -10,29 +10,12 @@
 // mixins
 @import "global/mixins";
 
-//checkbox style
-@import "global/checkbox_style";
-
-//radio_button style
-@import "global/radio_button";
-//Buregr menu
-@import "global/burgerBTN";
-
 
 
 // common
-@import "blocks/common/btn";
-@import "blocks/common/header-page";
-@import "blocks/common/main-nav";
 
 
 // index page
-@import "blocks/index/main-block";
-@import "blocks/index/programs";
-@import "blocks/index/instruction";
-@import "blocks/index/example";
-@import "blocks/index/footer";
-@import "blocks/index/overflow";
+
 
 //form
-@import "blocks/form/questionnaire";
