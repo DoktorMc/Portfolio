@@ -76,7 +76,7 @@ function makeStyles() {
     )
     .pipe(
       autoprefixer({
-        browsers: ["> 0.1%"],
+        overrideBrowserslist: ['last 2 versions'],
         cascade: false
       })
     )
