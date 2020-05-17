@@ -1,3 +1,6 @@
+body{
+  font-family: $montserrat;
+}
 .header_page{
   position: absolute;
   border-bottom: 1px solid #e6e6e6;
@@ -16,10 +19,16 @@
 .header_page_content{
   height: 100vh;
   display: flex;
-  flex-flow: column;
   justify-content: center;
-  align-content: center;
-  text{
-    display: inline-block;
+  align-items: center;
+  text-align: center;
+  a{
+    border-top: 2px solid #ffffff;;
   }
+  // hr{
+  //   width: 60px;
+  //   background-color: #ffffff;
+    
+    
+  // }
 }
