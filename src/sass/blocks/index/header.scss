@@ -1,19 +1,43 @@
-body{
-  font-family: $montserrat;
-}
+
 .header_page{
   position: absolute;
   border-bottom: 1px solid #e6e6e6;
   background-color: #000000;
   background-image: linear-gradient(to top, #fce38ae6 0%, #f38181e6 100%), url("/build/img/raster/Layer_15.png");
   background-size: cover;
-  height: 100vh;
+  height: 1000px;
   width: 100%;
 }
 
 .header_page_bar{
+  font-family: $montserrat;
+  margin-top: 28px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 37px;
+  .header_page_bar-logo{
+    align-self: flex-start;
+    width: 86px;
+    height: 23px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .header_page_bar-navigate{
+    width: 560px;
+    display: flex;
+    justify-content: space-around;
+    .header_page_bar-navigate__item{
+      width: 46px;
+      height: 10px;
+      color: #ffffff;
+      font-family: $kaushan_script;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      }
+  }
 }
 
 .header_page_content{
@@ -22,13 +46,40 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-  a{
-    border-top: 2px solid #ffffff;;
+  .header_page_content-description{
+    text-align: center;
+    color: #ffffff;
+    font-family: "Kaushan Script";
+    font-size: 72px;
+    font-weight: 400
   }
-  // hr{
-  //   width: 60px;
-  //   background-color: #ffffff;
-    
-    
-  // }
+  .header_page_content-title{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+    text-transform: uppercase;
+    margin: 42px 0 71px;
+  }
+  hr{
+    border: none; 
+    background-color: #ffffff; 
+    color: #ffffff; 
+    height: 2px; 
+    width: 60px;
+    margin-bottom: 50px;
+  }
+  .header_page_content-button{
+    border: 3px solid #ffffff;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 32px;
+  }
 }
+
+ 

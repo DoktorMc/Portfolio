@@ -29,3 +29,11 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Kaushan-Script';
+  src: url('../../../build/fonts/KaushanScript-Regular.woff2') format('woff2'),
+      url('../../../build/fonts/KaushanScript-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
