@@ -1,22 +1,21 @@
-
-.header_page{
+.header_page {
   position: absolute;
   border-bottom: 1px solid #e6e6e6;
   background-color: #000000;
   background-image: linear-gradient(to top, #fce38ae6 0%, #f38181e6 100%), url("/build/img/raster/Layer_15.png");
   background-size: cover;
-  height: 1000px;
   width: 100%;
 }
 
-.header_page_bar{
+.header_page_bar {
   font-family: $montserrat;
   margin-top: 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 37px;
-  .header_page_bar-logo{
+
+  .header_page_bar-logo {
     align-self: flex-start;
     width: 86px;
     height: 23px;
@@ -24,11 +23,13 @@
     font-size: 30px;
     font-weight: 700;
   }
-  .header_page_bar-navigate{
+
+  .header_page_bar-navigate {
     width: 560px;
     display: flex;
     justify-content: space-around;
-    .header_page_bar-navigate__item{
+
+    .header_page_bar-navigate__item {
       width: 46px;
       height: 10px;
       color: #ffffff;
@@ -36,24 +37,29 @@
       font-size: 14px;
       font-weight: 400;
       text-transform: uppercase;
-      }
+    }
   }
 }
 
-.header_page_content{
-  height: 100vh;
+
+
+.header_page_slider-container_item {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  .header_page_content-description{
+
+  .header_page_content-description {
+    margin-top: 64px;
     text-align: center;
     color: #ffffff;
     font-family: "Kaushan Script";
     font-size: 72px;
     font-weight: 400
   }
-  .header_page_content-title{
+
+  .header_page_content-title {
     color: #ffffff;
     font-family: Montserrat;
     font-size: 150px;
@@ -62,15 +68,17 @@
     text-transform: uppercase;
     margin: 42px 0 71px;
   }
-  hr{
-    border: none; 
-    background-color: #ffffff; 
-    color: #ffffff; 
-    height: 2px; 
+
+  hr {
+    border: none;
+    background-color: #ffffff;
+    color: #ffffff;
+    height: 2px;
     width: 60px;
     margin-bottom: 50px;
   }
-  .header_page_content-button{
+
+  .header_page_content-button {
     border: 3px solid #ffffff;
     text-transform: uppercase;
     color: #ffffff;
@@ -82,4 +90,73 @@
   }
 }
 
- 
+.header_page_slider-thumbs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 126px;
+
+  .header_page_slider-thumbs_item {
+    width: 280px;
+    padding-right: 30px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    hr {
+      position: relative;
+      opacity: 0.5;
+      border: none;
+      background-color: #ffffff;
+      color: #ffffff;
+      height: 3px;
+      &:before{
+          position: absolute;
+          content:'';
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 3px;
+          background: rgb(255, 0, 0);
+          transition: all 2s ease;
+          animation-delay: 0.5s;
+    }
+
+    span {
+      opacity: 0.7;
+      color: #ffffff;
+      font-family: $montserrat;
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      font {
+        font-size: 24px;
+        font-weight: 700;
+        /* Text style for "Intro" */
+        font-family: $montserrat-b;
+      }
+    }
+    
+    &:hover {
+      hr,
+      span {
+        opacity: 1;
+      }
+      
+    }
+    &__active {
+      hr,
+      span {
+        opacity: 1;
+      } 
+      hr{
+        &:before{
+          width: 25%;         
+        }
+      }
+    }
+
+  }
+
+}
