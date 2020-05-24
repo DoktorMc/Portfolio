@@ -3,7 +3,7 @@ const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const browserSync = require("browser-sync").create();
 const cleanCss = require("gulp-clean-css");
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
 const svgSprite = require("gulp-svg-sprite");
 const rimraf = require("rimraf");
 
