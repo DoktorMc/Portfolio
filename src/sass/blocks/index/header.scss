@@ -1,7 +1,4 @@
 .header_page {
-  position: absolute;
-  border-bottom: 1px solid #e6e6e6;
-  background-color: #000000;
   background-image: linear-gradient(to top, #fce38ae6 0%, #f38181e6 100%), url("/build/img/raster/Layer_15.png");
   background-size: cover;
   width: 100%;
@@ -10,7 +7,7 @@
 
 .header_page_bar {
   font-family: $montserrat;
-  margin-top: 28px;
+  padding-top: 27px;
   display: flex;
   justify-content: space-between;
   align-items: center;
