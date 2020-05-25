@@ -10,7 +10,7 @@ function slider() {
       let current = active.index();
       let next = current;
       
-
+      console.log(t);
       next = t.index();
       
 
