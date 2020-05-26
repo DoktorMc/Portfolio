@@ -1,0 +1,45 @@
+.service{
+  text-align: center;
+}
+
+.service_services{
+  margin: 65px 0 122px 0;
+  .service_services_items{
+    display: flex;
+    justify-content: space-between;
+    .service_services_items-item{
+      text-align: left;
+      // width: 333px;
+      // height: 69px;
+      display: flex;
+      .service_services_items-item-img{
+          margin-right: 27px;
+        }
+      .service_services_items-item-description{
+        width: 261px;
+        
+        
+        .service_services_items-item-description-title{
+          color: #333333;
+          font-family: $montserrat-b;
+          font-size: 14px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+        .service_services_items-item-description-text{
+          color: #999999;
+          font-family: Roboto;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  hr{
+    margin: 51px 0 47px 0 ;
+    border: none;
+    height: 1px;
+    background-color: #e5e5e5;
+  }
+}

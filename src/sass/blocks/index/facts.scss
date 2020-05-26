@@ -1,0 +1,33 @@
+.facts{
+  background-color: #95e1d3;
+}
+.facts-wraper{
+  display: flex;
+  justify-content: center;
+}
+.facts_items{
+  width: 241px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  &:last-child{
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .facts_items-numbers{
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .facts_items-description{
+    color: #ffffff;
+    font-family: $montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
