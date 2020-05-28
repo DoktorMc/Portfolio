@@ -43,10 +43,6 @@ function slider() {
     })
     .eq(0)
     .addClass("header_page_slider-container_item__wraper_active");
-   
-
-    
-console.log(sliderThumbs);
 }
 
 slider();

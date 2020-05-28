@@ -1,0 +1,19 @@
+.feautures{
+  background-image: url('../../../../build/img/raster/feauturesBG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  .feautures_img{
+    margin-top: 50px;
+    overflow: hidden;
+    .feautures_img_laptop{
+      position: relative;
+      top: 5px;
+    }
+    .feautures_img_phone{
+      position: absolute;
+      top: 500px;
+      left: 750px;
+    }
+  }
+}
