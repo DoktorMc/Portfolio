@@ -1,15 +1,23 @@
 
-// $(window).scroll(function () {
-  $('.facts_items-numbers').each(function () {
-    $(this).prop('Count', 0).animate({
-      Count: $(this).text()
-    }, {
-      duration: 2000,
-      easing: 'swing',
-      step: function (now) {
-        $(this).next(Math.ceil(now));
-        console.log(now)
-      }
-    });
-  });
-// });
+function countup(className) {
+  var countBlockTop = $("." + className).offset().top;
+  var windowHeight = window.innerHeight;
+  var show = true;
+
+  $(window).scroll(function () {
+    if (show && (countBlockTop < $(window).scrollTop() + windowHeight)) {
+      show = false;
+
+      $('.' + className).spincrement({
+        from: 1,
+        duration: 4000,
+      });
+    }
+  })
+}
+
+
+$(function () {
+  countup("facts_items-numbers");
+});
+
